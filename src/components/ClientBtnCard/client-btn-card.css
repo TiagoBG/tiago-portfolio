@@ -1,0 +1,36 @@
+.client-button-container{
+    border: 2px solid green;
+    justify-content: center;
+}
+.client-button__details{
+    display: none;
+}
+.client-button-container:hover .client-button, .client-button-container:hover .client-button{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    transform: translateY(-50px);
+}
+
+.client-button-container:hover .client-button__details, .client-button-container:hover .client-button__details{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: block;
+    width: 400px;
+    height: fit-content;
+    border: 2px solid blue;
+    font-size: 14px;
+    /* TODO: revisar este margin top */
+    margin-top: -52px;
+}
+
+
+
+.client-button{
+    width: 120px;
+    height: 55px;  
+    border-radius: 8px;
+}
+
+.client-button:hover, .client-button:active{
+    
+}

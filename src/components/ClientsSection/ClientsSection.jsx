@@ -1,34 +1,13 @@
 import './clients-section.css';
+import clients from '../../api/clients.json'
+import ClientBtnCard from '../ClientBtnCard/ClientBtnCard';
+
 
 const ClientsSection = () => {
   return (
-    <div>
-      <p id="head1" class="header">
-        Awesome designs
-      </p>
-      <p id="head2" class="header">
-        Just
-      </p>
-      <p id="head3" class="header">
-        For you
-      </p>
-      <p id="head4" class="header">
-        simple and awesome all the time
-      </p>
-      <p id="head5" class="header">
-        Welcome to BA designs
-      </p>
-      <button>Continue</button>
-      <div class="light x1"></div>
-      <div class="light x2"></div>
-      <div class="light x3"></div>
-      <div class="light x4"></div>
-      <div class="light x5"></div>
-      <div class="light x6"></div>
-      <div class="light x7"></div>
-      <div class="light x8"></div>
-      <div class="light x9"></div>
-    </div>
+    <section className='clients-section'>
+      {clients.map(client => <ClientBtnCard key={client.id} client={client}/>)}
+    </section>
   );
 };
 
