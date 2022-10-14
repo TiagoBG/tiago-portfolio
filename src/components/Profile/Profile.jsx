@@ -9,12 +9,11 @@ const Profile = () => {
             <div className="profile-container__image">
                 <img src={Tiago} alt="tiagobg-developer" className="profile__image" />
             </div>
-            <div className="profile-details__container">
-                <p className="profile-details__description">
-                    Full Stack JavaScript developer with teamwork skills, leadership,
-                    passion for continuous learning, good retention, analysis, planning
-                    and execution skills.
-                </p>
+            <div className="profile-details__container">                
+                <div className="profile-details__info">
+                    <h1>Hi! I'm Tiago</h1>
+                    <p className="profile-details__intro">JavaScript Developer, Gryffindor & sometimes... I think I'm an artist.</p>
+                </div>
                 <div className="profile-details__redes">
                     <BsTwitter />
                     <BsLinkedin />
