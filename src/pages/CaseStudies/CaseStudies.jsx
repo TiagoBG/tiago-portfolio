@@ -1,4 +1,4 @@
-import React from 'react';
+import './case-studies.css';
 
 const CaseStudies = () => {
     return (
