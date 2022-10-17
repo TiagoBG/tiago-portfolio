@@ -9,7 +9,7 @@
 .main-header{
     width: 100%;
     height: 70px;
-    padding: 16px;
+    padding: 1rem;
 }
 
 .main-header__link{
@@ -18,10 +18,11 @@
 
 .main-header__logo{
     width: 150px;
+    color: black;
 }
 
 .main-nav{
-    width: 80%;
+    width: 60%;
     display: none;
 }
 

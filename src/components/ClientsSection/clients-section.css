@@ -1,9 +1,13 @@
 .clients-section{
   display: flex;
-  flex-flow: row;
-  width: 100%;
+  flex-flow: column nowrap;
   justify-content: space-around;
-  align-items: center;
-  border: 2px solid red;
-  height: 30vh;
+  align-items: flex-start;
+}
+
+@media (min-width: 46rem){
+  .clients-section{
+    flex-flow: row wrap;
+    height: 30vh;
+  }
 }

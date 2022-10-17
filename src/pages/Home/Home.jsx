@@ -1,13 +1,18 @@
-import React from "react";
+import "./home.css";
 import ClientsSection from "../../components/ClientsSection/ClientsSection";
-import ProfileSection from "../../components/ProfileSection/ProfileSection";
+import ReviewsCarousel from '../../components/ReviewsCarousel/ReviewsCarousel';
+import Profile from "../../components/Profile/Profile";
+
 
 const Home = () => {
   return (
-    <div>
-        <ProfileSection />
-        {/* <ClientsSection />  */}     
-    </div>
+    <section className="section__main">
+        <Profile/>
+        <ReviewsCarousel/>
+        <div className="section__main--clients">
+        <ClientsSection/>
+        </div>
+    </section>
   );
 };
 

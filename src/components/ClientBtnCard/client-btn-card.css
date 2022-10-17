@@ -1,15 +1,32 @@
 .client-button-container{
-    border: 2px solid green;
-    justify-content: center;
+    display: flex;
+/*     border: 2px solid green;
+ */    justify-content: center;
     position: relative;
+    font-size: 0.8rem;
+    margin: 0.75rem 0;
+    height: 7.5rem;
 }
 .client-button{
     position: relative;
 }
 .client-button__details{
-    display: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 0.3rem;
 }
-.client-button-container:hover .client-button, .client-button-container:hover .client-button{
+
+.details__role{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.details__date--info{
+    display: flex;
+    font-style: italic;
+}
+/* .client-button-container:hover .client-button, .client-button-container:hover .client-button{
     transition: all 0.5s ease;
     position: absolute;
     left: 35%;
@@ -21,11 +38,11 @@
     transition: all 0.5s ease;
     cursor: pointer;
     display: block;
-    width: 400px;
+    width: 90vw;
     height: fit-content;
     border: 2px solid blue;
     font-size: 14px;
-}
+} */
 
 
 

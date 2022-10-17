@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "Jorge Hincapie Palacio",
+        "role": "IT Specialist",
+        "company": "qiip Colombia",
+        "review": "Santiago es una persona muy receptiva, con buena capacidad de aprendizaje continuo y siempre dispuesto a proponer nuevas y mejores maneras de hacer las cosas."
+    },
+    {
+        "id": 2,
+        "name": "Rodrigo Galvez",
+        "role": "Senior SAP ABAP & Workflows Consultant",
+        "company": "FixSys Consulting",
+        "review": "Santiago es muy buen desarrollador en teconologias basasdas en JavaScript (Angular, React, NodeJS). Domina el Design Thinking . Demuestra un apetito de aprendizaje continui. Creo que puede ser una excelente contribución en cualquier proyecto."
+    },
+    {
+        "id": 3,
+        "name": "José Dimas Luján Castillo",
+        "role": "Senior Community Program Manager (GLOBAL)",
+        "company": "Turing",
+        "review": "Santiago es un gran desarrollador, nos demostro su gran dominio en Angular, JS and React en los proyectos donde estuvimos colaborando."
+    },
+    
+    {
+        "id": 4,
+        "name": "Luis Martínez Mendoza",
+        "role": "Team Leader - OpenWeekApps Project",
+        "company": "Open Bootcamp",
+        "review": "Tuve la oportunidad de desarrollar software junto a Santiago y demostró un amplio conocimiento en JavaScript y React. Es una persona responsable, proactiva y siempre estuvo dispuesto a brindar apoyo a todos los compañeros del equipo."
+    }
+]

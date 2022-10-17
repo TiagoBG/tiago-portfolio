@@ -40,3 +40,8 @@
   color: #888;
 }
  */
+.App{
+  background: linear-gradient(-30deg,#111133, #1f1f9b);
+  height: 100%;
+  position: relative;
+}

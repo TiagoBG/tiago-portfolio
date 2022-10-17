@@ -1,0 +1,29 @@
+.review__container{
+    display: flex;
+    border-radius: 12px;
+}
+
+.review__slide{
+    color: black;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    place-self: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review__info{
+    font-size: 0.8rem;
+    text-align: justify;
+
+}
+
+.review__details{
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
