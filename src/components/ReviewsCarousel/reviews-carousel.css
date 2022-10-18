@@ -1,6 +1,7 @@
 .review__container {
     overflow: hidden;
     width: 100%;
+    margin: 1rem 0 ;
 }
 
 .review__slideshow {
@@ -10,7 +11,7 @@
 
 .review__slide {
     background: white;
-    height: 12rem;
+    height: 9rem;
     width: 100%;
     border-radius: 12px;
     display: inline-block;
@@ -19,28 +20,23 @@
 }
 
 .review__info {
-    border: 2px solid green;
-    height: 98%;
-    width: 90%;
-    padding: 0.5rem;
+    display: inline-block;
+    line-height: 1;
+    padding: 0.5rem;    
+    width: 100%;
 }
 
 .review__data {
     font-size: 0.8rem;
-    border: 2px solid red;
     height: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    word-wrap: break-word;
-
+    white-space: normal;
+    text-align: justify;
 }
 
 .review__details {
-    position: absolute;
-    bottom: 0;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-style: italic;
-    margin-top: 0.5rem;
+    margin-top: 2.3rem;
 }
 
 .slideshowDots {
