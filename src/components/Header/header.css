@@ -1,4 +1,5 @@
-.main-header, .main-nav__list{
+.main-header,
+.main-nav__list {
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -6,75 +7,84 @@
     font-weight: bold;
 }
 
-.main-header{
+.main-header {
     width: 100%;
     height: 70px;
     padding: 1rem;
 }
 
-.main-header__link{
+.backdrop {
+    display: none;
+    opacity: 0;
+}
+
+.main-header__link {
     padding-top: 8px;
 }
 
-.main-header__logo{
+.main-header__logo {
     width: 150px;
     color: black;
 }
 
-.main-nav{
+.main-nav {
     width: 60%;
     display: none;
+    font-size: 1rem;
 }
 
-.main-nav__list{
+.main-nav__list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.main-nav__item{
+.main-nav__item {
     width: 18%;
     text-align: center;
-    font-size: 1rem;
 }
 
-.main-nav__link{
+.main-nav__link,
+.mobile-nav__link {
     text-decoration: none;
     color: white;
 }
 
-.main-nav__link:hover, .main-nav__link:active{
-    color: yellow;
+.main-nav__link:hover,
+.main-nav__link:active {
+    color: #6a0dad;
     cursor: pointer;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #6a0dad;
     padding-bottom: 5px;
 }
 
-.main-nav__item--cta a{
+.main-nav__item--cta a,
+.mobile-nav__item--cta a {
     background: white;
     border-radius: 12px;
-    border: 2px solid green;
+    border: 2px solid #6a0dad;
     width: 100%;
-    color: green;
+    color: #6a0dad;
     font-weight: bold;
     padding: 8px;
 }
 
-.main-nav__item--cta a:hover, .main-nav__item--cta a:active{
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
     cursor: pointer;
-    background: green;
+    background: #6a0dad;
     border: 2px solid white;
     color: white;
 }
 
-.main-nav__mobile-button{
+.main-nav__mobile-button {
     background: none;
-    border: 2px solid limegreen;
+    border: 2px solid white;
     border-radius: 8px;
     padding: 0.5rem;
 }
 
-.main-nav__mobile-btn-icon{
+.main-nav__mobile-btn-icon {
     color: white;
     font-size: 1.2rem;
     text-align: center;
@@ -82,11 +92,59 @@
     margin: auto;
 }
 
-@media (min-width: 46rem){
-    .main-nav__mobile-button{
+.mobile-nav {
+    display: none;
+    transition: transform 300ms ease-out;
+}
+
+.mobile-nav__list {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.backdrop--active{
+    display: block;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.2s linear;
+}
+
+.mobile-nav--active{
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: linear-gradient(#6a0dad, #450dad);
+    height: 100vh;
+    width: 60%;
+    z-index: 4;
+}
+
+@media (min-width: 46rem) {
+    .main-nav__mobile-button {
         display: none;
     }
-    .main-nav{
+
+    .main-nav {
         display: block;
+    }
+
+    .mobile-nav {
+        display: none;
     }
 }

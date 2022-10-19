@@ -10,13 +10,14 @@
 }
 
 .review__slide {
-    background: white;
     height: 9rem;
     width: 100%;
     border-radius: 12px;
     display: inline-block;
-    color: black;
-    border: 2px solid black;
+    color: whitesmoke;
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 0.2rem;
 }
 
 .review__info {
@@ -24,19 +25,19 @@
     line-height: 1;
     padding: 0.5rem;    
     width: 100%;
+    font-size: 0.8rem;
 }
 
 .review__data {
-    font-size: 0.8rem;
     height: 50px;
     white-space: normal;
     text-align: justify;
 }
 
 .review__details {
-    font-size: 0.8rem;
     font-style: italic;
     margin-top: 2.3rem;
+    white-space: normal;
 }
 
 .slideshowDots {
@@ -45,8 +46,8 @@
 
 .slideshowDot {
     display: inline-block;
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     cursor: pointer;
     margin: 15px 7px 0px;
@@ -56,4 +57,19 @@
 
 .slideshowDot.active {
     background-color: #6a0dad;
+}
+
+@media(min-width: 46rem){
+    .review__info{
+        font-size: 0.8rem;
+    }
+    .review__details{
+        font-weight: bold;
+    }
+}
+
+@media(min-width: 64rem){
+    .review__info{
+        font-size: 1rem;
+    }
 }

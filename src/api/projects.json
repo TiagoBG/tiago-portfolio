@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "name": "OB Catsponses",
+        "version": 1,
+        "company": "Open Bootcamp",
+        "role": "Frontend Developer",
+        "tech-stack": ["javascript", "react", "css", "git", "figma"],
+        "url": "https://ob-catsponses.vercel.app/",
+        "isCompleted": true
+    },
+    {
+        "id": 2,
+        "name": "Viresland Concerts",
+        "version": 2,
+        "company": "Viresland",
+        "role": "Frontend Developer",
+        "tech-stack": ["next", "typescript", "react", "postgresql", "tailwind", "sass"],
+        "url": "",
+        "isCompleted": false
+    },
+    {
+        "id": 3,
+        "name": "Colegio Geek",
+        "version": 2,
+        "company": "Viresland",
+        "role": "Frontend Developer",
+        "tech-stack": ["react", "node", "postgresql", "express", "git", "sass"],
+        "url": "",
+        "isCompleted": false
+    },
+    {
+        "id": 4,
+        "name": "Book A Flight",
+        "version": 1,
+        "company": "Viresland",
+        "role": "Frontend Developer",
+        "tech-stack": ["js", "react", "css", "git", "figma"],
+        "url": "",
+        "isCompleted": false
+    }
+
+]

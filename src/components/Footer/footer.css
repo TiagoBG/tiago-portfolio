@@ -1,7 +1,15 @@
-.main-footer{
+.main-footer {
     width: 100%;
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    flex-flow: column-reverse;
+    gap: 1rem;
+    align-items: center;
     padding: 1.5rem 0;
+}
+
+@media(min-width:46rem) {
+    .main-footer {
+        flex-flow: row;
+        justify-content: space-around;
+    }
 }

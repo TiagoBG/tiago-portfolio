@@ -15,8 +15,8 @@ const Profile = () => {
                     <p className="profile-details__intro">JavaScript Developer & Process Engineer. A passionate for tech, art & science.</p>
                 </div>
                 <div className="profile-details__redes">
-                    <BsTwitter />
-                    <BsLinkedin />
+                    <BsTwitter className="detail__redes--icon"/>
+                    <BsLinkedin className="detail__redes--icon"/>
                 </div>
             </div>
         </div>

@@ -26,7 +26,6 @@ useEffect(() => {
 }, [currentIndex]);
 
 
-
   return (
     <article className="review__container">
       <div className="review__slideshow" 

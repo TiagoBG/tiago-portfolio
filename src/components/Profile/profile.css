@@ -2,11 +2,14 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    height: 100%;
+}
+.profile-container__image{
 }
 
 .profile-details__container {
     display: flex;
-    flex-flow: column-reverse nowrap;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: space-between;
     height: 7rem;
@@ -18,9 +21,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 4.2rem;
-}
-
-.profile-container__image {
 }
 
 .profile__image {
@@ -49,13 +49,26 @@
     width: 100%;
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     font-size: 1.4rem;
 }
 
-@media (min-width: 46rem) {
+.detail__redes--icon:hover, .detail__redes--icon:hover{
+    color: #6a0dad;
+    cursor: pointer;
+    border-radius: 20%;
+    transform: scale(50rem);
+}
+
+@media (min-width: 62rem) {
+    .profile-details__intro{
+        padding: 0.2rem 4rem;
+        font-size: 1.1rem;
+    }
+
     .profile__image {
-        height: 12rem;
+        height: 9rem;
     }
 
 }

@@ -40,8 +40,14 @@
   color: #888;
 }
  */
-.App{
-  background: linear-gradient(-30deg,#111133, #1f1f9b);
-  height: 100%;
-  position: relative;
+.App {
+  background: linear-gradient(-30deg, #111133, #1f1f9b) content-box;
+  background-size: 100%;
+  display: grid;
+}
+
+@media (min-width: 40rem) {
+  .App{
+    height: 100vh;
+  }
 }
