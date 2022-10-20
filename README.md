@@ -11,7 +11,7 @@ https://lenguajejs.com/retos/nivel-facil/basic-card/
 - Presupuesto Following App
 - Programming learning platform Pokémon theme. Broke - HTML, Misty - CSS, etc...
 - QCar app
-- Refactor de Colegio Geek y Flight booking
+- Refactor de Colegio Geek, Shelvdon y Flight booking
 - Bingo y otros
 
 - MERN Stack: Blog
