@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import reviews from '../../api/reviews.json';
 import './reviews-carousel.css';
 
-const delay = 8000;
+const delay = 800000000;
 
 const ReviewsCarousel = () => {
 const [currentIndex, setCurrentIndex] = useState(0);

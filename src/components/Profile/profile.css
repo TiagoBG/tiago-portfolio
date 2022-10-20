@@ -3,6 +3,13 @@
     flex-flow: column nowrap;
     align-items: center;
     height: 100%;
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 25px;
+    padding: 0.5rem;
 }
 .profile-container__image{
 }
@@ -61,7 +68,15 @@
     transform: scale(50rem);
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 22rem){
+    .profile-container{
+        padding: 1.2rem;
+    }
+}
+
+@media (min-width: 40rem) {
+    .profile-container{
+    }
     .profile-details__intro{
         padding: 0.2rem 4rem;
         font-size: 1.1rem;

@@ -1,30 +1,49 @@
 .client-button-container{
     display: flex;
-/*     border: 2px solid green;
- */    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     font-size: 0.8rem;
     margin: 0.75rem 0;
-    height: 7.5rem;
+    height: 9.5rem;
+    padding: 0.5rem;
+}
+.client-button__header{
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
 }
 .client-button{
     position: relative;
+    width: 20%;
 }
 .client-button__details{
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    width: 80%;
     padding: 0.3rem;
 }
 
 .details__role{
     font-weight: bold;
     font-size: 0.9rem;
+    width: 70%;
+    padding: 0.5rem;
 }
 
 .details__date--info{
     display: flex;
+    flex-flow: column wrap;
     font-style: italic;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 0.5rem;
+}
+
+.details__description{
+    text-align: justify;
 }
 
 
@@ -39,25 +58,16 @@
 @media (min-width: 46rem){
     .client-button-container{
         align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        width: 40%;
+    }
+    .client-button__header{
+        width: 100%;
+        justify-content: space-between;
     }
     .client-button__details{
-        display: none;
+        display: flex;
+        width: 40%;
     }
-    /* .client-button-container:hover .client-button, .client-button-container:hover .client-button{
-        transition: all 0.5s ease;
-        position: absolute;
-        left: 35%;
-        cursor: pointer;
-        transform: translateY(-50px);
-    }
-    
-    .client-button-container:hover .client-button__details, .client-button-container:hover .client-button__details{
-        transition: all 0.5s ease;
-        cursor: pointer;
-        display: block;
-        width: 90vw;
-        height: fit-content;
-        border: 2px solid blue;
-        font-size: 14px;
-    } */
 }

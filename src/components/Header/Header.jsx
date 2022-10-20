@@ -38,15 +38,15 @@ const Header = () => {
       <button className="main-nav__mobile-button" onClick={()=>setIsToggleDisplayed(!isToggleDisplayed)}>
         <GiHamburgerMenu className="main-nav__mobile-btn-icon" />
       </button>
-      <nav className={isToggleDisplayed ? `mobile-nav--active` : `mobile-nav`}>
+      <nav className={isToggleDisplayed ? `mobile-nav--active` : `mobile-nav`} style={isToggleDisplayed ? {display: "block"} : {display: "none"}}>
         <ul className="mobile-nav__list">
-          <li className="mobile-nav__item">
+          <li className="mobile-nav__item" onClick={()=>setIsToggleDisplayed(!isToggleDisplayed)}>
             <Link to="/" className="mobile-nav__link">About</Link>
           </li>
-          <li className="mobile-nav__item">
+          <li className="mobile-nav__item" onClick={()=>setIsToggleDisplayed(!isToggleDisplayed)}>
             <Link to="/projects" className="mobile-nav__link">Projects</Link>
           </li>
-          <li className="mobile-nav__item">
+          <li className="mobile-nav__item" onClick={()=>setIsToggleDisplayed(!isToggleDisplayed)}>
             <Link to="/contact" className="mobile-nav__link">Contact</Link>
           </li>
           <li className="mobile-nav__item--cta">

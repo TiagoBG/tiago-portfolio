@@ -5,11 +5,11 @@
     padding: 0.5rem;
     border-radius: 25px;
     margin: 0.5rem;
-    background: rgba(255, 255, 255, 0.17);
+   /*  background: rgba(255, 255, 255, 0.17);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.1px);
     -webkit-backdrop-filter: blur(2.1px);
-    border: 1px solid rgba(255, 255, 255, 0.26);
+    border: 1px solid rgba(255, 255, 255, 0.26); */
     align-items: center;
     gap: 1.4rem 5px;
 }
@@ -22,13 +22,12 @@
 
 
 @media (min-width: 46rem){
-    .section__main{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr) ;
-        max-height: 26rem;
-    }
+   /* .section__main{
+        display: flex;
+        flex-flow: row wrap;
+    } */
 
-    .section__main--clients{
+    /*.section__main--clients{
         grid-column: span 3;
-    }
+    } */
 }
