@@ -11,8 +11,6 @@
     border-radius: 25px;
     padding: 0.5rem;
 }
-.profile-container__image{
-}
 
 .profile-details__container {
     display: flex;
@@ -62,7 +60,7 @@
 }
 
 .detail__redes--icon:hover, .detail__redes--icon:hover{
-    color: #6a0dad;
+    color: #ff8800;
     cursor: pointer;
     border-radius: 20%;
     transform: scale(50rem);
@@ -77,6 +75,7 @@
 @media (min-width: 40rem) {
     .profile-container{
     }
+    
     .profile-details__intro{
         padding: 0.2rem 4rem;
         font-size: 1.1rem;
