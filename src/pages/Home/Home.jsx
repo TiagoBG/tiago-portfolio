@@ -6,7 +6,7 @@ import Profile from "../../components/Profile/Profile";
 const Home = () => {
   return (
     <section className="section__main">
-      <Profile />
+    <Profile />
       <ReviewsCarousel />
       <div className="section__main--clients">
         <ClientsSection />

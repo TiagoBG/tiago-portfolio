@@ -16,7 +16,7 @@
     display: inline-block;
     color: whitesmoke;
     background: rgba(255, 255, 255, 0.17);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
     padding: 0.2rem;
 }
 
@@ -60,6 +60,17 @@
 }
 
 @media(min-width: 46rem){
+
+    .review__container{
+        width: 50%;
+    }
+
+    .review__slideshow{
+        padding: 2rem 1.8rem;
+    }
+    .review__slide{
+        margin: 1.5rem;
+    }
     .review__info{
         font-size: 0.8rem;
     }

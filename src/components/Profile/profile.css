@@ -4,10 +4,10 @@
     align-items: center;
     height: 100%;
     background: rgba(255, 255, 255, 0.17);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgb(106, 13, 173, 0.4);
     backdrop-filter: blur(2.1px);
     -webkit-backdrop-filter: blur(2.1px);
-    border: 1px solid rgba(255, 255, 255, 0.26);
+    border: 1px solid rgb(106, 13, 173, 0.7);
     border-radius: 25px;
     padding: 0.5rem;
 }
@@ -74,6 +74,7 @@
 
 @media (min-width: 40rem) {
     .profile-container{
+        width: 70%;
     }
     
     .profile-details__intro{
