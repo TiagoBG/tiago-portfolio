@@ -55,4 +55,13 @@
     .contact__article{
         padding: 2rem 0;
     }
+
+    #email, #name, #message{
+        width: 60%;
+    }
+
+    .contact__form--cta{
+        width: 30%;
+        margin-top: 1rem;
+    }
 }

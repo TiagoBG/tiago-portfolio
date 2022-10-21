@@ -21,7 +21,6 @@
 }
 
 .profile-details__info{
-    margin-top: 0.7rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,21 +68,32 @@
 @media (min-width: 22rem){
     .profile-container{
         padding: 1.2rem;
+        height: 100%;
     }
 }
 
 @media (min-width: 40rem) {
     .profile-container{
         width: 70%;
+        justify-content: space-around;
     }
-    
+
     .profile-details__intro{
-        padding: 0.2rem 4rem;
         font-size: 1.1rem;
+        justify-content: space-around;
+        height: 10rem;
+    }
+
+    .profile-details__container{
+        height: 10rem;
+    }
+
+    .profile-details__title{
+       margin-bottom: 0.5rem;
     }
 
     .profile__image {
-        height: 9rem;
+        height: 10rem;
     }
 
 }
