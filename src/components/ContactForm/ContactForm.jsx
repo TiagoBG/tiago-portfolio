@@ -1,10 +1,8 @@
 import { useRef } from 'react';
 import './style.css';
 import Swal from 'sweetalert2';
-const parslizied = import.meta.env.VITE_SMTP_PARSLEY;
-const hamenized = import.meta.env.VITE_SMTP_HAM;
-const pepperized = import.meta.env.VITE_SMTP_HONEY;
 const served = import.meta.env.VITE_SMTP_PLATE;
+const sugar = import.meta.env.VITE_SMTP_SUGAR;
 
 const ContactForm = () => {
     const formRef = useRef(null);
@@ -15,11 +13,12 @@ const ContactForm = () => {
         const formObj = [...formRef.current.elements].filter(
             element => element.type === "text" || element.id === "message"
         ).reduce((acc, element) => {
+            console.log(acc, element)
             return {
                 ...acc,
                 [element.id]: element.value
             }
-        });
+        });        
 
         sendEmail(formObj);
         clearFields();
@@ -30,14 +29,11 @@ const ContactForm = () => {
     }
 
     const sendEmail = (formObj) => {
-        console.log(formObj);
         Email.send({
-            Host: hamenized,
-            Username: parslizied,
-            Password: pepperized,
+            SecureToken: sugar,
             To: served,
             From: formObj.email,
-            Subject: `Meeting request from ${formObj.name}`,
+            Subject: `Meeting request from ${formObj.value}`,
             Body: formObj.message
         }).then(
             message => message === 'OK' ?
