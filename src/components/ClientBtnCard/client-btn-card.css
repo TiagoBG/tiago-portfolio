@@ -55,7 +55,7 @@
     border-radius: 8px;
 }
 
-@media (min-width: 46rem){
+@media (min-width: 40rem){
     .client-button-container{
         align-items: center;
         display: flex;

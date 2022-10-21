@@ -139,7 +139,7 @@
 
 }
 
-@media (min-width: 46rem) {
+@media (min-width: 40rem) {
     .main-nav__mobile-button {
         display: none;
     }

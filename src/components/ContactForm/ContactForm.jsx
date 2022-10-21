@@ -53,8 +53,10 @@ const ContactForm = () => {
     return (
         <article className='contact__article'>
             <form ref={formRef} onSubmit={handleSubmit} className="contact__form">
+                <div className='contact__form-info'>
                 <h2>Let's talk!</h2>
                 <p>Please fill the contact form below:</p>
+                </div>                
                 <div className="contact__form__fields">
                     <input type="text" id='name' placeholder='Enter your full name' required />
                     <input type="text" id='email' placeholder='Enter your email' required />
