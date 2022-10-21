@@ -1,7 +1,7 @@
 .review__container {
     overflow: hidden;
-    width: 100%;
     margin: 1rem 0 ;
+    max-width: 92vw;
 }
 
 .review__slideshow {
@@ -59,10 +59,10 @@
     background-color: #6a0dad;
 }
 
-@media(min-width: 46rem){
+@media(min-width: 40rem){
 
     .review__container{
-        width: 50%;
+        width: 60%;
     }
 
     .review__slideshow{

@@ -12,7 +12,7 @@
     border-radius: 25px;
 }
 
-@media (min-width: 46rem){
+@media (min-width: 40rem){
   .clients-section{
     flex-flow: row wrap;
   }
