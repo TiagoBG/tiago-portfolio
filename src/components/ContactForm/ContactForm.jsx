@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import './style.css';
 import Swal from 'sweetalert2';
 const parslizied = import.meta.env.VITE_SMTP_PARSLEY;
 const hamenized = import.meta.env.VITE_SMTP_HAM;
@@ -11,17 +12,20 @@ const ContactForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const formObj = {};
-
-        [...formRef.current.elements].filter(
+        const formObj = [...formRef.current.elements].filter(
             element => element.type === "text" || element.id === "message"
-        ).forEach(element => formObj[element.id] = element.value);
+        ).reduce((acc, element) => {
+            return {
+                ...acc,
+                [element.id]: element.value
+            }
+        });
 
         sendEmail(formObj);
         clearFields();
     }
 
-    const clearFields  = () => {
+    const clearFields = () => {
         [...formRef.current.elements].forEach(element => element.value = '');
     }
 
@@ -51,14 +55,16 @@ const ContactForm = () => {
     }
 
     return (
-        <article className='contact form'>
-            <form ref={formRef} onSubmit={handleSubmit}>
+        <article className='contact__article'>
+            <form ref={formRef} onSubmit={handleSubmit} className="contact__form">
                 <h2>Let's talk!</h2>
                 <p>Please fill the contact form below:</p>
-                <input type="text" id='name' placeholder='Enter your full name' required />
-                <input type="text" id='email' placeholder='Enter your email' required />
-                <textarea id='message' placeholder='Please enter the message you would like to send' required></textarea>
-                <button type='submit'>Submit</button>
+                <div className="contact__form__fields">
+                    <input type="text" id='name' placeholder='Enter your full name' required />
+                    <input type="text" id='email' placeholder='Enter your email' required />
+                    <textarea id='message' placeholder='Please enter the message you would like to send' required></textarea>
+                    <button type='submit' className='contact__form--cta'>Submit</button>
+                </div>
             </form>
         </article>
     );

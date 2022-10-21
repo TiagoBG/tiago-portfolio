@@ -1,0 +1,41 @@
+.contact__article{
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 25px;
+    padding: 0.5rem;
+    width: 40%
+}
+
+.contact__form{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.contact__form__fields{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#email, #name, #message, .contact__form--cta{
+    border-radius: 5px;
+    width: 80%;
+    height: 2.3rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+
+#message{
+    height: 6rem;
+}
+
+.contact__form--cta{
+    width: 40%;
+}
