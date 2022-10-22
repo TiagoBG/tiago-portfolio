@@ -14,16 +14,9 @@
 .app__footer{
   grid-row: 4 / span 1;
 }
-/* 
+
 @media (min-width: 40rem) {
   .App{
+      height: 100vh;
   }
-  
-  .app__layout{
-    grid-row-start: 1;
-    border: 2px solid red;
-  }
-  .app__footer{
-    grid-row-start: 4;
-  }
-} */
+}
